@@ -24,8 +24,6 @@ screen.onkey(snake.right, "Right")
 
 
 
-
-
 game_is_on = True
 while game_is_on:
     screen.update()  # updates the screen - gia pio smooth game build
@@ -46,29 +44,6 @@ while game_is_on:
         if snake.head.distance(segment) <10:
             scoreboard.reset()
             snake.reset()
-
-
-
-    # for segment in snake.segments:
-    #     if segment == snake.head:
-    #         pass
-    #     elif snake.head.distance(segment) <10:
-    #         game_is_on = False
-    #         scoreboard.game_over()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
